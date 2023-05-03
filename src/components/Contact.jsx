@@ -63,13 +63,16 @@ export default function Contact() {
             </div>
           </div>
         </div>
+
         <form
-          data-netlify="true"
           name="contact"
           method="post"
+          data-netlify="true"
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
+          <input type="hidden" name="form-name" value="contact" />
+
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
@@ -77,7 +80,6 @@ export default function Contact() {
             Think I'm a good fit for your team? Go ahead and send me a message.
             Excited to speak with you!
           </p>
-          <input type="hidden" name="form-name" value="contact" />
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
               Name
